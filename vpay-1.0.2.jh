@@ -1,0 +1,219 @@
+/**
+* ProductType: MOBILE, GAME
+*/
+entity ProductType{
+productTypeCode String unique required,
+productTypeName String required,
+productTypeDesc String,
+productTypeCategory String required,
+productUDF1 String,
+productUDF2 String,
+productUDF3 String,
+isDeleted Boolean required
+}
+/**
+* Product: VTEl, VINA, MOBI
+*/
+entity Product {
+	productCode String unique required,
+    productName String required,
+    productValue Integer,
+    productDesc String,
+    productUDF1 String,
+    productUDF2 String,
+    productUDF3 String,
+    isDeleted Boolean required
+}
+/**
+* Product: VN: 50k, VN: 100k
+* VT: 50k, VT: 100k
+*/
+entity ProductTypeWallet {
+	productTypeWalletUDF1 String,
+    productTypeWalletUDF2 String,
+    productTypeWalletUDF3 String,
+    isDeleted Boolean required
+}
+
+/**
+* Partner: VTC, Viettel, Media
+*/
+entity Partner {
+partnerCode String unique required,
+partnerName String required,
+partnerDesc String,
+partnerOrder Integer required,
+partnerAPIUsername String,
+partnerAPIPassword String,
+partnerUrl String,
+partnerStatus String,
+partnerUDF1 String,
+partnerUDF2 String,
+partnerUDF3 String,
+isDeleted Boolean required
+}
+
+entity PayPartner {
+payPartnerCode String unique required,
+payPartnerName String required,
+payPartnerDesc String,
+payPartnerUsername String,
+payPartnerSecretKey String,
+payPartnerStatus String,
+payPartnerUDF1 String,
+payPartnerUDF2 String,
+payPartnerUDF3 String,
+isDeleted Boolean required
+}
+/**
+* DEBIT, CREDIT, CANCEL
+*/
+entity WalletTransactionType {
+walletTransTypeCode String unique required,
+walletTransTypeName String required,
+walletTransTypeDesc String,
+walletTransTypeFlag Integer required,
+walletTransTypeUDF1 String,
+walletTransTypeUDF2 String,
+walletTransTypeUDF3 String,
+walletTransTypeUDF4 String,
+walletTransTypeUDF5 String,
+isDeleted Boolean required
+}
+entity Wallet {
+walletNumber String unique required,
+walletIsActive Boolean required,
+walletDesc String,
+walletUDF1 String,
+walletUDF2 String,
+walletUDF3 String,
+walletUDF4 String,
+walletUDF5 String,
+isDeleted Boolean required
+}
+
+entity WalletRule {
+walletRuleCode String unique required,
+walletRuleName String required,
+walletRuleDesc String,
+walletRuleFromDate Instant required,
+walletRuleToDate Instant required,
+walletRuleUDF1 String,
+walletRuleUDF2 String,
+walletRuleUDF3 String,
+walletRuleUDF4 String,
+walletRuleUDF5 String,
+isDeleted Boolean required
+}
+
+entity WalletRuleRate {
+walletRuleRateCode String unique required,
+walletRuleRateName String required,
+walletRuleRateDesc String,
+walletRuleRateFromValue Long required,
+walletRuleRateToValue Long required,
+walletRuleRateDiscount Long required,
+walletRuleRateUDF1 String,
+walletRuleRateUDF2 String,
+walletRuleRateUDF3 String,
+walletRuleRateUDF4 String,
+walletRuleRateUDF5 String,
+isDeleted Boolean required
+}
+
+entity WalletTransaction {
+walletTransAmount Long required,
+walletTransDate Instant required,
+walletTransRef String,
+walletTransUsername String,
+walletTransStatus String,
+walletTransUDF1 String,
+walletTransUDF2 String,
+walletTransUDF3 String,
+walletTransUDF4 String,
+walletTransUDF5 String,
+isDeleted Boolean required
+}
+entity PartnerTransaction {
+partnerTransAmount Long required,
+partnerTransDate Instant required,
+partnerTransRef String,
+partnerTransUsername String,
+partnerTransStatus String,
+partnerTransUDF1 String,
+partnerTransUDF2 String,
+partnerTransUDF3 String,
+partnerTransUDF4 String,
+partnerTransUDF5 String,
+isDeleted Boolean required
+}
+
+entity PayPartnerLog {
+payLogAmount String,
+payLogTransRef String,
+payLogUsername String,
+payLogProductTypeCode String,
+payLogResuleCode String,
+payLogResuleDesc String,
+payLogDate Instant,
+payLogUDF1 String,
+payLogUDF2 String,
+payLogUDF3 String,
+payLogUDF4 String,
+payLogUDF5 String,
+isDeleted Boolean required
+}
+entity PartnerLog {
+partnerLogAmount String,
+partnerLogTransRef String,
+partnerLogUsername String,
+partnerLogProductTypeCode String,
+partnerLogResultCode String,
+partnerLogResultDesc String,
+partnerLogDate Instant,
+partnerLogUDF1 String,
+partnerLogUDF2 String,
+partnerLogUDF3 String,
+partnerLogUDF4 String,
+partnerLogUDF5 String,
+isDeleted Boolean required
+}
+
+entity Status {
+statusCode String unique required,
+statusValue Integer,
+statusName String,
+statusDesc String,
+statusUDF1 String,
+statusUDF2 String,
+statusUDF3 String,
+isDeleted Boolean required
+}
+
+// Relationship
+relationship OneToMany {
+PayPartner{walletPayPartner(payPartnerName)} to Wallet,
+PayPartner{walletRulePayPartner(payPartnerName)} to WalletRule,
+ProductType{productProductType(productTypeName)} to Product,
+ProductType{walletProductType(productTypeName)} to Wallet,
+ProductType{walletRuleProductType(productTypeName)} to WalletRule,
+ProductType{partnerTransProductType} to PartnerTransaction,
+WalletRule{WalletRuleRateWalletRule(walletRuleName)} to WalletRuleRate,
+Wallet{walletTransWallet} to WalletTransaction,
+Partner{walletPartner(partnerName)} to Wallet,
+WalletTransactionType{walletTransWalletTransType} to WalletTransaction,
+Partner{partnerLogPartner} to PartnerLog,
+WalletTransaction{partnerTransWalletTransaction} to PartnerTransaction,
+Partner{partnerTransPartner} to PartnerTransaction,
+PayPartner{partnerLogPayPartner} to PayPartnerLog
+ProductType{productTypeWallet} to ProductTypeWallet,
+Wallet{walletProductType} to ProductTypeWallet
+}
+
+
+// Set pagination options
+paginate ProductType, PayPartner, Partner, WalletRule, WalletTransactionType  with infinite-scroll
+paginate Wallet, Product, WalletRuleRate, PartnerTransaction, WalletTransaction, 
+		PayPartnerLog, PartnerLog	with pagination
+
+
