@@ -1,0 +1,39 @@
+{
+  "generator-jhipster": {
+    "applicationType": "monolith",
+    "gitCompany": "",
+    "baseName": "vpay03",
+    "packageName": "vn.vpay",
+    "packageFolder": "vn/vpay",
+    "serverPort": 8186,
+    "serviceDiscoveryType": false,
+    "authenticationType": "jwt",
+    "uaaBaseName": "../uaa",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "mysql",
+    "prodDatabaseType": "mysql",
+    "searchEngine": false,
+    "enableSwaggerCodegen": "true",
+    "messageBroker": false,
+    "buildTool": "maven",
+    "useSass": false,
+    "clientPackageManager": "npm",
+    "testFrameworks": [],
+    "enableTranslation": true,
+    "nativeLanguage": "vi",
+    "languages": [
+      "en",
+      "vi"
+    ],
+    "clientFramework": "react",
+    "jhiPrefix": "jhi",
+    "jhipsterVersion": "5.6.0",
+    "jwtSecretKey": "MGZmNWQ1ZTY4ODZiNTYzNThkMThhZTEzMGRiYWZhMzgyMjA4MDhmNmQxMDMxYjVhMjI2MDE1OTk5OWM5ODM5M2QzZjhlZjExZWU5ZDk3MGQxNGFiNDMwODdmZDUxODI2NGI3NjE5MGQ5MzdjMTdmYzkzNTYwZWM2ZDY2OGY5MTc="
+  },
+  "git-provider": "GitHub",
+  "git-company": "tkmd123",
+  "repository-name": "vpay03"
+}
