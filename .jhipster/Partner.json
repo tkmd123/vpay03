@@ -1,0 +1,96 @@
+{
+    "name": "Partner",
+    "fields": [
+        {
+            "fieldName": "partnerCode",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "unique",
+                "required"
+            ]
+        },
+        {
+            "fieldName": "partnerName",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "partnerDesc",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "partnerOrder",
+            "fieldType": "Integer",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "partnerAPIUsername",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "partnerAPIPassword",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "partnerUrl",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "partnerStatus",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "partnerUDF1",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "partnerUDF2",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "partnerUDF3",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "isDeleted",
+            "fieldType": "Boolean",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "walletPartner",
+            "otherEntityName": "wallet",
+            "otherEntityRelationshipName": "partner"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "partnerLogPartner",
+            "otherEntityName": "partnerLog",
+            "otherEntityRelationshipName": "partner"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "partnerTransPartner",
+            "otherEntityName": "partnerTransaction",
+            "otherEntityRelationshipName": "partner"
+        }
+    ],
+    "changelogDate": "20181104112404",
+    "javadoc": "Partner: VTC, Viettel, Media",
+    "entityTableName": "partner",
+    "dto": "no",
+    "pagination": "infinite-scroll",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

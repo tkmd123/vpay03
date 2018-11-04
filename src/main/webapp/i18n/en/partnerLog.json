@@ -1,0 +1,34 @@
+{
+  "vpay03App": {
+    "partnerLog": {
+      "home": {
+        "title": "Partner Logs",
+        "createLabel": "Create a new Partner Log",
+        "createOrEditLabel": "Create or edit a Partner Log"
+      },
+      "created": "A new Partner Log is created with identifier {{ param }}",
+      "updated": "A Partner Log is updated with identifier {{ param }}",
+      "deleted": "A Partner Log is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Partner Log {{ id }}?"
+      },
+      "detail": {
+        "title": "Partner Log"
+      },
+      "partnerLogAmount": "Partner Log Amount",
+      "partnerLogTransRef": "Partner Log Trans Ref",
+      "partnerLogUsername": "Partner Log Username",
+      "partnerLogProductTypeCode": "Partner Log Product Type Code",
+      "partnerLogResultCode": "Partner Log Result Code",
+      "partnerLogResultDesc": "Partner Log Result Desc",
+      "partnerLogDate": "Partner Log Date",
+      "partnerLogUDF1": "Partner Log UDF 1",
+      "partnerLogUDF2": "Partner Log UDF 2",
+      "partnerLogUDF3": "Partner Log UDF 3",
+      "partnerLogUDF4": "Partner Log UDF 4",
+      "partnerLogUDF5": "Partner Log UDF 5",
+      "isDeleted": "Is Deleted",
+      "partner": "Partner"
+    }
+  }
+}

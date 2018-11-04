@@ -1,0 +1,33 @@
+{
+  "vpay03App": {
+    "payPartner": {
+      "home": {
+        "title": "Pay Partners",
+        "createLabel": "Create a new Pay Partner",
+        "createOrEditLabel": "Create or edit a Pay Partner"
+      },
+      "created": "A new Pay Partner is created with identifier {{ param }}",
+      "updated": "A Pay Partner is updated with identifier {{ param }}",
+      "deleted": "A Pay Partner is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Pay Partner {{ id }}?"
+      },
+      "detail": {
+        "title": "Pay Partner"
+      },
+      "payPartnerCode": "Pay Partner Code",
+      "payPartnerName": "Pay Partner Name",
+      "payPartnerDesc": "Pay Partner Desc",
+      "payPartnerUsername": "Pay Partner Username",
+      "payPartnerSecretKey": "Pay Partner Secret Key",
+      "payPartnerStatus": "Pay Partner Status",
+      "payPartnerUDF1": "Pay Partner UDF 1",
+      "payPartnerUDF2": "Pay Partner UDF 2",
+      "payPartnerUDF3": "Pay Partner UDF 3",
+      "isDeleted": "Is Deleted",
+      "walletPayPartner": "Wallet Pay Partner",
+      "walletRulePayPartner": "Wallet Rule Pay Partner",
+      "partnerLogPayPartner": "Partner Log Pay Partner"
+    }
+  }
+}

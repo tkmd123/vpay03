@@ -1,0 +1,34 @@
+{
+  "vpay03App": {
+    "walletTransaction": {
+      "home": {
+        "title": "Wallet Transactions",
+        "createLabel": "Create a new Wallet Transaction",
+        "createOrEditLabel": "Create or edit a Wallet Transaction"
+      },
+      "created": "A new Wallet Transaction is created with identifier {{ param }}",
+      "updated": "A Wallet Transaction is updated with identifier {{ param }}",
+      "deleted": "A Wallet Transaction is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Wallet Transaction {{ id }}?"
+      },
+      "detail": {
+        "title": "Wallet Transaction"
+      },
+      "walletTransAmount": "Wallet Trans Amount",
+      "walletTransDate": "Wallet Trans Date",
+      "walletTransRef": "Wallet Trans Ref",
+      "walletTransUsername": "Wallet Trans Username",
+      "walletTransStatus": "Wallet Trans Status",
+      "walletTransUDF1": "Wallet Trans UDF 1",
+      "walletTransUDF2": "Wallet Trans UDF 2",
+      "walletTransUDF3": "Wallet Trans UDF 3",
+      "walletTransUDF4": "Wallet Trans UDF 4",
+      "walletTransUDF5": "Wallet Trans UDF 5",
+      "isDeleted": "Is Deleted",
+      "walletTransactionType": "Wallet Transaction Type",
+      "wallet": "Wallet",
+      "partnerTransWalletTransaction": "Partner Trans Wallet Transaction"
+    }
+  }
+}

@@ -1,0 +1,77 @@
+{
+    "name": "PayPartnerLog",
+    "fields": [
+        {
+            "fieldName": "payLogAmount",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "payLogTransRef",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "payLogUsername",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "payLogProductTypeCode",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "payLogResuleCode",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "payLogResuleDesc",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "payLogDate",
+            "fieldType": "Instant"
+        },
+        {
+            "fieldName": "payLogUDF1",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "payLogUDF2",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "payLogUDF3",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "payLogUDF4",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "payLogUDF5",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "isDeleted",
+            "fieldType": "Boolean",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipName": "payPartner",
+            "otherEntityName": "payPartner",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20181104112412",
+    "entityTableName": "pay_partner_log",
+    "dto": "no",
+    "pagination": "pagination",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

@@ -1,0 +1,34 @@
+{
+  "vpay03App": {
+    "walletRule": {
+      "home": {
+        "title": "Wallet Rules",
+        "createLabel": "Create a new Wallet Rule",
+        "createOrEditLabel": "Create or edit a Wallet Rule"
+      },
+      "created": "A new Wallet Rule is created with identifier {{ param }}",
+      "updated": "A Wallet Rule is updated with identifier {{ param }}",
+      "deleted": "A Wallet Rule is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Wallet Rule {{ id }}?"
+      },
+      "detail": {
+        "title": "Wallet Rule"
+      },
+      "walletRuleCode": "Wallet Rule Code",
+      "walletRuleName": "Wallet Rule Name",
+      "walletRuleDesc": "Wallet Rule Desc",
+      "walletRuleFromDate": "Wallet Rule From Date",
+      "walletRuleToDate": "Wallet Rule To Date",
+      "walletRuleUDF1": "Wallet Rule UDF 1",
+      "walletRuleUDF2": "Wallet Rule UDF 2",
+      "walletRuleUDF3": "Wallet Rule UDF 3",
+      "walletRuleUDF4": "Wallet Rule UDF 4",
+      "walletRuleUDF5": "Wallet Rule UDF 5",
+      "isDeleted": "Is Deleted",
+      "productType": "Product Type",
+      "payPartner": "Pay Partner",
+      "walletRuleRateWalletRule": "Wallet Rule Rate Wallet Rule"
+    }
+  }
+}

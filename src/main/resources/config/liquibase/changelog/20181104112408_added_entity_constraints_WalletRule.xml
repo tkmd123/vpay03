@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+    <!--
+        Added the constraints for entity WalletRule.
+    -->
+    <changeSet id="20181104112408-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="product_type_id"
+                                 baseTableName="wallet_rule"
+                                 constraintName="fk_wallet_rule_product_type_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="product_type"/>
+
+        <addForeignKeyConstraint baseColumnNames="pay_partner_id"
+                                 baseTableName="wallet_rule"
+                                 constraintName="fk_wallet_rule_pay_partner_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="pay_partner"/>
+
+    </changeSet>
+</databaseChangeLog>

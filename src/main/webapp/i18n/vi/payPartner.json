@@ -1,0 +1,33 @@
+{
+  "vpay03App": {
+    "payPartner": {
+      "home": {
+        "title": "Pay Partners",
+        "createLabel": "Thêm mới một Pay Partner",
+        "createOrEditLabel": "Thêm mới hoặc cập nhật Pay Partner"
+      },
+      "created": "Một Pay Partner mới được tạo với định danh {{ param }}",
+      "updated": "Một Pay Partner cập nhật với định danh {{ param }}",
+      "deleted": "Một Pay Partner đã xóa với định danh {{ param }}",
+      "delete": {
+        "question": "Bạn có chắc là muốn xóa Pay Partner {{ id }}?"
+      },
+      "detail": {
+        "title": "Pay Partner"
+      },
+      "payPartnerCode": "Pay Partner Code",
+      "payPartnerName": "Pay Partner Name",
+      "payPartnerDesc": "Pay Partner Desc",
+      "payPartnerUsername": "Pay Partner Username",
+      "payPartnerSecretKey": "Pay Partner Secret Key",
+      "payPartnerStatus": "Pay Partner Status",
+      "payPartnerUDF1": "Pay Partner UDF 1",
+      "payPartnerUDF2": "Pay Partner UDF 2",
+      "payPartnerUDF3": "Pay Partner UDF 3",
+      "isDeleted": "Is Deleted",
+      "walletPayPartner": "Wallet Pay Partner",
+      "walletRulePayPartner": "Wallet Rule Pay Partner",
+      "partnerLogPayPartner": "Partner Log Pay Partner"
+    }
+  }
+}

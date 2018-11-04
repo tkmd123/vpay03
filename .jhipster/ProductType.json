@@ -1,0 +1,92 @@
+{
+    "name": "ProductType",
+    "fields": [
+        {
+            "fieldName": "productTypeCode",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "unique",
+                "required"
+            ]
+        },
+        {
+            "fieldName": "productTypeName",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "productTypeDesc",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "productTypeCategory",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "productUDF1",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "productUDF2",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "productUDF3",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "isDeleted",
+            "fieldType": "Boolean",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "productProductType",
+            "otherEntityName": "product",
+            "otherEntityRelationshipName": "productType"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "walletProductType",
+            "otherEntityName": "wallet",
+            "otherEntityRelationshipName": "productType"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "walletRuleProductType",
+            "otherEntityName": "walletRule",
+            "otherEntityRelationshipName": "productType"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "partnerTransProductType",
+            "otherEntityName": "partnerTransaction",
+            "otherEntityRelationshipName": "productType"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "productTypeWallet",
+            "otherEntityName": "productTypeWallet",
+            "otherEntityRelationshipName": "productType"
+        }
+    ],
+    "changelogDate": "20181104112401",
+    "javadoc": "ProductType: MOBILE, GAME",
+    "entityTableName": "product_type",
+    "dto": "no",
+    "pagination": "infinite-scroll",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

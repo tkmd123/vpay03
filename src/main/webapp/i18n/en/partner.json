@@ -1,0 +1,35 @@
+{
+  "vpay03App": {
+    "partner": {
+      "home": {
+        "title": "Partners",
+        "createLabel": "Create a new Partner",
+        "createOrEditLabel": "Create or edit a Partner"
+      },
+      "created": "A new Partner is created with identifier {{ param }}",
+      "updated": "A Partner is updated with identifier {{ param }}",
+      "deleted": "A Partner is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Partner {{ id }}?"
+      },
+      "detail": {
+        "title": "Partner"
+      },
+      "partnerCode": "Partner Code",
+      "partnerName": "Partner Name",
+      "partnerDesc": "Partner Desc",
+      "partnerOrder": "Partner Order",
+      "partnerAPIUsername": "Partner API Username",
+      "partnerAPIPassword": "Partner API Password",
+      "partnerUrl": "Partner Url",
+      "partnerStatus": "Partner Status",
+      "partnerUDF1": "Partner UDF 1",
+      "partnerUDF2": "Partner UDF 2",
+      "partnerUDF3": "Partner UDF 3",
+      "isDeleted": "Is Deleted",
+      "walletPartner": "Wallet Partner",
+      "partnerLogPartner": "Partner Log Partner",
+      "partnerTransPartner": "Partner Trans Partner"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "vpay03App": {
+    "product": {
+      "home": {
+        "title": "Products",
+        "createLabel": "Create a new Product",
+        "createOrEditLabel": "Create or edit a Product"
+      },
+      "created": "A new Product is created with identifier {{ param }}",
+      "updated": "A Product is updated with identifier {{ param }}",
+      "deleted": "A Product is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Product {{ id }}?"
+      },
+      "detail": {
+        "title": "Product"
+      },
+      "productCode": "Product Code",
+      "productName": "Product Name",
+      "productValue": "Product Value",
+      "productDesc": "Product Desc",
+      "productUDF1": "Product UDF 1",
+      "productUDF2": "Product UDF 2",
+      "productUDF3": "Product UDF 3",
+      "isDeleted": "Is Deleted",
+      "productType": "Product Type"
+    }
+  }
+}

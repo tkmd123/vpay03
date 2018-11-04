@@ -1,0 +1,65 @@
+{
+    "name": "Product",
+    "fields": [
+        {
+            "fieldName": "productCode",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "unique",
+                "required"
+            ]
+        },
+        {
+            "fieldName": "productName",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "productValue",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "productDesc",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "productUDF1",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "productUDF2",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "productUDF3",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "isDeleted",
+            "fieldType": "Boolean",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipName": "productType",
+            "otherEntityName": "productType",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20181104112402",
+    "javadoc": "Product: VTEl, VINA, MOBI",
+    "entityTableName": "product",
+    "dto": "no",
+    "pagination": "pagination",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

@@ -1,0 +1,34 @@
+{
+  "vpay03App": {
+    "wallet": {
+      "home": {
+        "title": "Wallets",
+        "createLabel": "Create a new Wallet",
+        "createOrEditLabel": "Create or edit a Wallet"
+      },
+      "created": "A new Wallet is created with identifier {{ param }}",
+      "updated": "A Wallet is updated with identifier {{ param }}",
+      "deleted": "A Wallet is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Wallet {{ id }}?"
+      },
+      "detail": {
+        "title": "Wallet"
+      },
+      "walletNumber": "Wallet Number",
+      "walletIsActive": "Wallet Is Active",
+      "walletDesc": "Wallet Desc",
+      "walletUDF1": "Wallet UDF 1",
+      "walletUDF2": "Wallet UDF 2",
+      "walletUDF3": "Wallet UDF 3",
+      "walletUDF4": "Wallet UDF 4",
+      "walletUDF5": "Wallet UDF 5",
+      "isDeleted": "Is Deleted",
+      "productType": "Product Type",
+      "partner": "Partner",
+      "payPartner": "Pay Partner",
+      "walletTransWallet": "Wallet Trans Wallet",
+      "walletProductType": "Wallet Product Type"
+    }
+  }
+}

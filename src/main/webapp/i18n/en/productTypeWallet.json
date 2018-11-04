@@ -1,0 +1,26 @@
+{
+  "vpay03App": {
+    "productTypeWallet": {
+      "home": {
+        "title": "Product Type Wallets",
+        "createLabel": "Create a new Product Type Wallet",
+        "createOrEditLabel": "Create or edit a Product Type Wallet"
+      },
+      "created": "A new Product Type Wallet is created with identifier {{ param }}",
+      "updated": "A Product Type Wallet is updated with identifier {{ param }}",
+      "deleted": "A Product Type Wallet is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Product Type Wallet {{ id }}?"
+      },
+      "detail": {
+        "title": "Product Type Wallet"
+      },
+      "productTypeWalletUDF1": "Product Type Wallet UDF 1",
+      "productTypeWalletUDF2": "Product Type Wallet UDF 2",
+      "productTypeWalletUDF3": "Product Type Wallet UDF 3",
+      "isDeleted": "Is Deleted",
+      "productType": "Product Type",
+      "wallet": "Wallet"
+    }
+  }
+}

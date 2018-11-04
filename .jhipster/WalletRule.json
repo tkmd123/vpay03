@@ -1,0 +1,94 @@
+{
+    "name": "WalletRule",
+    "fields": [
+        {
+            "fieldName": "walletRuleCode",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "unique",
+                "required"
+            ]
+        },
+        {
+            "fieldName": "walletRuleName",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "walletRuleDesc",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "walletRuleFromDate",
+            "fieldType": "Instant",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "walletRuleToDate",
+            "fieldType": "Instant",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "walletRuleUDF1",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "walletRuleUDF2",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "walletRuleUDF3",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "walletRuleUDF4",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "walletRuleUDF5",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "isDeleted",
+            "fieldType": "Boolean",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipName": "productType",
+            "otherEntityName": "productType",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipName": "payPartner",
+            "otherEntityName": "payPartner",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "walletRuleRateWalletRule",
+            "otherEntityName": "walletRuleRate",
+            "otherEntityRelationshipName": "walletRule"
+        }
+    ],
+    "changelogDate": "20181104112408",
+    "entityTableName": "wallet_rule",
+    "dto": "no",
+    "pagination": "infinite-scroll",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

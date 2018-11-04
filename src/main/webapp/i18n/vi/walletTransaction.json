@@ -1,0 +1,34 @@
+{
+  "vpay03App": {
+    "walletTransaction": {
+      "home": {
+        "title": "Wallet Transactions",
+        "createLabel": "Thêm mới một Wallet Transaction",
+        "createOrEditLabel": "Thêm mới hoặc cập nhật Wallet Transaction"
+      },
+      "created": "Một Wallet Transaction mới được tạo với định danh {{ param }}",
+      "updated": "Một Wallet Transaction cập nhật với định danh {{ param }}",
+      "deleted": "Một Wallet Transaction đã xóa với định danh {{ param }}",
+      "delete": {
+        "question": "Bạn có chắc là muốn xóa Wallet Transaction {{ id }}?"
+      },
+      "detail": {
+        "title": "Wallet Transaction"
+      },
+      "walletTransAmount": "Wallet Trans Amount",
+      "walletTransDate": "Wallet Trans Date",
+      "walletTransRef": "Wallet Trans Ref",
+      "walletTransUsername": "Wallet Trans Username",
+      "walletTransStatus": "Wallet Trans Status",
+      "walletTransUDF1": "Wallet Trans UDF 1",
+      "walletTransUDF2": "Wallet Trans UDF 2",
+      "walletTransUDF3": "Wallet Trans UDF 3",
+      "walletTransUDF4": "Wallet Trans UDF 4",
+      "walletTransUDF5": "Wallet Trans UDF 5",
+      "isDeleted": "Is Deleted",
+      "walletTransactionType": "Wallet Transaction Type",
+      "wallet": "Wallet",
+      "partnerTransWalletTransaction": "Partner Trans Wallet Transaction"
+    }
+  }
+}

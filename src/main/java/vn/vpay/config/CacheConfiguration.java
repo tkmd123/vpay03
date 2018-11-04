@@ -38,6 +38,36 @@ public class CacheConfiguration {
             cm.createCache(vn.vpay.domain.User.class.getName(), jcacheConfiguration);
             cm.createCache(vn.vpay.domain.Authority.class.getName(), jcacheConfiguration);
             cm.createCache(vn.vpay.domain.User.class.getName() + ".authorities", jcacheConfiguration);
+            cm.createCache(vn.vpay.domain.ProductType.class.getName(), jcacheConfiguration);
+            cm.createCache(vn.vpay.domain.ProductType.class.getName() + ".productProductTypes", jcacheConfiguration);
+            cm.createCache(vn.vpay.domain.ProductType.class.getName() + ".walletProductTypes", jcacheConfiguration);
+            cm.createCache(vn.vpay.domain.ProductType.class.getName() + ".walletRuleProductTypes", jcacheConfiguration);
+            cm.createCache(vn.vpay.domain.ProductType.class.getName() + ".partnerTransProductTypes", jcacheConfiguration);
+            cm.createCache(vn.vpay.domain.ProductType.class.getName() + ".productTypeWallets", jcacheConfiguration);
+            cm.createCache(vn.vpay.domain.Product.class.getName(), jcacheConfiguration);
+            cm.createCache(vn.vpay.domain.ProductTypeWallet.class.getName(), jcacheConfiguration);
+            cm.createCache(vn.vpay.domain.Partner.class.getName(), jcacheConfiguration);
+            cm.createCache(vn.vpay.domain.Partner.class.getName() + ".walletPartners", jcacheConfiguration);
+            cm.createCache(vn.vpay.domain.Partner.class.getName() + ".partnerLogPartners", jcacheConfiguration);
+            cm.createCache(vn.vpay.domain.Partner.class.getName() + ".partnerTransPartners", jcacheConfiguration);
+            cm.createCache(vn.vpay.domain.PayPartner.class.getName(), jcacheConfiguration);
+            cm.createCache(vn.vpay.domain.PayPartner.class.getName() + ".walletPayPartners", jcacheConfiguration);
+            cm.createCache(vn.vpay.domain.PayPartner.class.getName() + ".walletRulePayPartners", jcacheConfiguration);
+            cm.createCache(vn.vpay.domain.PayPartner.class.getName() + ".partnerLogPayPartners", jcacheConfiguration);
+            cm.createCache(vn.vpay.domain.WalletTransactionType.class.getName(), jcacheConfiguration);
+            cm.createCache(vn.vpay.domain.WalletTransactionType.class.getName() + ".walletTransWalletTransTypes", jcacheConfiguration);
+            cm.createCache(vn.vpay.domain.Wallet.class.getName(), jcacheConfiguration);
+            cm.createCache(vn.vpay.domain.Wallet.class.getName() + ".walletTransWallets", jcacheConfiguration);
+            cm.createCache(vn.vpay.domain.Wallet.class.getName() + ".walletProductTypes", jcacheConfiguration);
+            cm.createCache(vn.vpay.domain.WalletRule.class.getName(), jcacheConfiguration);
+            cm.createCache(vn.vpay.domain.WalletRule.class.getName() + ".walletRuleRateWalletRules", jcacheConfiguration);
+            cm.createCache(vn.vpay.domain.WalletRuleRate.class.getName(), jcacheConfiguration);
+            cm.createCache(vn.vpay.domain.WalletTransaction.class.getName(), jcacheConfiguration);
+            cm.createCache(vn.vpay.domain.WalletTransaction.class.getName() + ".partnerTransWalletTransactions", jcacheConfiguration);
+            cm.createCache(vn.vpay.domain.PartnerTransaction.class.getName(), jcacheConfiguration);
+            cm.createCache(vn.vpay.domain.PayPartnerLog.class.getName(), jcacheConfiguration);
+            cm.createCache(vn.vpay.domain.PartnerLog.class.getName(), jcacheConfiguration);
+            cm.createCache(vn.vpay.domain.Status.class.getName(), jcacheConfiguration);
             // jhipster-needle-ehcache-add-entry
         };
     }

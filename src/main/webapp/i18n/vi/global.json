@@ -8,6 +8,20 @@
       "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
       "entities": {
         "main": "Thực thể",
+        "productType": "Product Type",
+        "product": "Product",
+        "productTypeWallet": "Product Type Wallet",
+        "partner": "Partner",
+        "payPartner": "Pay Partner",
+        "walletTransactionType": "Wallet Transaction Type",
+        "wallet": "Wallet",
+        "walletRule": "Wallet Rule",
+        "walletRuleRate": "Wallet Rule Rate",
+        "walletTransaction": "Wallet Transaction",
+        "partnerTransaction": "Partner Transaction",
+        "payPartnerLog": "Pay Partner Log",
+        "partnerLog": "Partner Log",
+        "status": "Status",
         "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
       },
       "account": {

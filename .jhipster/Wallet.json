@@ -1,0 +1,92 @@
+{
+    "name": "Wallet",
+    "fields": [
+        {
+            "fieldName": "walletNumber",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "unique",
+                "required"
+            ]
+        },
+        {
+            "fieldName": "walletIsActive",
+            "fieldType": "Boolean",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "walletDesc",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "walletUDF1",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "walletUDF2",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "walletUDF3",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "walletUDF4",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "walletUDF5",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "isDeleted",
+            "fieldType": "Boolean",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipName": "productType",
+            "otherEntityName": "productType",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipName": "partner",
+            "otherEntityName": "partner",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipName": "payPartner",
+            "otherEntityName": "payPartner",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "walletTransWallet",
+            "otherEntityName": "walletTransaction",
+            "otherEntityRelationshipName": "wallet"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "walletProductType",
+            "otherEntityName": "productTypeWallet",
+            "otherEntityRelationshipName": "wallet"
+        }
+    ],
+    "changelogDate": "20181104112407",
+    "entityTableName": "wallet",
+    "dto": "no",
+    "pagination": "pagination",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

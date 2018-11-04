@@ -1,0 +1,89 @@
+{
+    "name": "WalletRuleRate",
+    "fields": [
+        {
+            "fieldName": "walletRuleRateCode",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "unique",
+                "required"
+            ]
+        },
+        {
+            "fieldName": "walletRuleRateName",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "walletRuleRateDesc",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "walletRuleRateFromValue",
+            "fieldType": "Long",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "walletRuleRateToValue",
+            "fieldType": "Long",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "walletRuleRateDiscount",
+            "fieldType": "Long",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "walletRuleRateUDF1",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "walletRuleRateUDF2",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "walletRuleRateUDF3",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "walletRuleRateUDF4",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "walletRuleRateUDF5",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "isDeleted",
+            "fieldType": "Boolean",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipName": "walletRule",
+            "otherEntityName": "walletRule",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20181104112409",
+    "entityTableName": "wallet_rule_rate",
+    "dto": "no",
+    "pagination": "pagination",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

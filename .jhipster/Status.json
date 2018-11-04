@@ -1,0 +1,54 @@
+{
+    "name": "Status",
+    "fields": [
+        {
+            "fieldName": "statusCode",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "unique",
+                "required"
+            ]
+        },
+        {
+            "fieldName": "statusValue",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "statusName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "statusDesc",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "statusUDF1",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "statusUDF2",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "statusUDF3",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "isDeleted",
+            "fieldType": "Boolean",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20181104112414",
+    "entityTableName": "status",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

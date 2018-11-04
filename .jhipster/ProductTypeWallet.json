@@ -1,0 +1,48 @@
+{
+    "name": "ProductTypeWallet",
+    "fields": [
+        {
+            "fieldName": "productTypeWalletUDF1",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "productTypeWalletUDF2",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "productTypeWalletUDF3",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "isDeleted",
+            "fieldType": "Boolean",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipName": "productType",
+            "otherEntityName": "productType",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipName": "wallet",
+            "otherEntityName": "wallet",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20181104112403",
+    "javadoc": "Product: VN: 50k, VN: 100k\nVT: 50k, VT: 100k",
+    "entityTableName": "product_type_wallet",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

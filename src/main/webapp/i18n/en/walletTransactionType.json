@@ -1,0 +1,31 @@
+{
+  "vpay03App": {
+    "walletTransactionType": {
+      "home": {
+        "title": "Wallet Transaction Types",
+        "createLabel": "Create a new Wallet Transaction Type",
+        "createOrEditLabel": "Create or edit a Wallet Transaction Type"
+      },
+      "created": "A new Wallet Transaction Type is created with identifier {{ param }}",
+      "updated": "A Wallet Transaction Type is updated with identifier {{ param }}",
+      "deleted": "A Wallet Transaction Type is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Wallet Transaction Type {{ id }}?"
+      },
+      "detail": {
+        "title": "Wallet Transaction Type"
+      },
+      "walletTransTypeCode": "Wallet Trans Type Code",
+      "walletTransTypeName": "Wallet Trans Type Name",
+      "walletTransTypeDesc": "Wallet Trans Type Desc",
+      "walletTransTypeFlag": "Wallet Trans Type Flag",
+      "walletTransTypeUDF1": "Wallet Trans Type UDF 1",
+      "walletTransTypeUDF2": "Wallet Trans Type UDF 2",
+      "walletTransTypeUDF3": "Wallet Trans Type UDF 3",
+      "walletTransTypeUDF4": "Wallet Trans Type UDF 4",
+      "walletTransTypeUDF5": "Wallet Trans Type UDF 5",
+      "isDeleted": "Is Deleted",
+      "walletTransWalletTransType": "Wallet Trans Wallet Trans Type"
+    }
+  }
+}

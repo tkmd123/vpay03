@@ -1,0 +1,84 @@
+{
+    "name": "PayPartner",
+    "fields": [
+        {
+            "fieldName": "payPartnerCode",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "unique",
+                "required"
+            ]
+        },
+        {
+            "fieldName": "payPartnerName",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "payPartnerDesc",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "payPartnerUsername",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "payPartnerSecretKey",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "payPartnerStatus",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "payPartnerUDF1",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "payPartnerUDF2",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "payPartnerUDF3",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "isDeleted",
+            "fieldType": "Boolean",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "walletPayPartner",
+            "otherEntityName": "wallet",
+            "otherEntityRelationshipName": "payPartner"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "walletRulePayPartner",
+            "otherEntityName": "walletRule",
+            "otherEntityRelationshipName": "payPartner"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "partnerLogPayPartner",
+            "otherEntityName": "payPartnerLog",
+            "otherEntityRelationshipName": "payPartner"
+        }
+    ],
+    "changelogDate": "20181104112405",
+    "entityTableName": "pay_partner",
+    "dto": "no",
+    "pagination": "infinite-scroll",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

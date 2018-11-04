@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd
+                        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+    <property name="now" value="now()" dbms="h2"/>
+
+    <property name="now" value="now()" dbms="mysql"/>
+    <property name="autoIncrement" value="true"/>
+
+    <property name="floatType" value="float4" dbms="postgresql, h2"/>
+    <property name="floatType" value="float" dbms="mysql, oracle, mssql"/>
+
+    <!--
+        Added the entity WalletRule.
+    -->
+    <changeSet id="20181104112408-1" author="jhipster">
+        <createTable tableName="wallet_rule">
+            <column name="id" type="bigint" autoIncrement="${autoIncrement}">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="wallet_rule_code" type="varchar(255)">
+                <constraints nullable="false" unique="true" uniqueConstraintName="ux_wallet_rule_wallet_rule_code" />
+            </column>
+
+            <column name="wallet_rule_name" type="varchar(255)">
+                <constraints nullable="false" />
+            </column>
+
+            <column name="wallet_rule_desc" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="wallet_rule_from_date" type="datetime">
+                <constraints nullable="false" />
+            </column>
+
+            <column name="wallet_rule_to_date" type="datetime">
+                <constraints nullable="false" />
+            </column>
+
+            <column name="wallet_rule_udf_1" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="wallet_rule_udf_2" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="wallet_rule_udf_3" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="wallet_rule_udf_4" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="wallet_rule_udf_5" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="is_deleted" type="bit">
+                <constraints nullable="false" />
+            </column>
+
+            <column name="product_type_id" type="bigint">
+                <constraints nullable="true" />
+            </column>
+
+            <column name="pay_partner_id" type="bigint">
+                <constraints nullable="true" />
+            </column>
+
+            <!-- jhipster-needle-liquibase-add-column - JHipster will add columns here, do not remove-->
+        </createTable>
+        <dropDefaultValue tableName="wallet_rule" columnName="wallet_rule_from_date" columnDataType="datetime"/>
+        <dropDefaultValue tableName="wallet_rule" columnName="wallet_rule_to_date" columnDataType="datetime"/>
+        
+    </changeSet>
+    <!-- jhipster-needle-liquibase-add-changeset - JHipster will add changesets here, do not remove-->
+</databaseChangeLog>

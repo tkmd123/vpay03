@@ -1,0 +1,33 @@
+{
+  "vpay03App": {
+    "productType": {
+      "home": {
+        "title": "Product Types",
+        "createLabel": "Thêm mới một Product Type",
+        "createOrEditLabel": "Thêm mới hoặc cập nhật Product Type"
+      },
+      "created": "Một Product Type mới được tạo với định danh {{ param }}",
+      "updated": "Một Product Type cập nhật với định danh {{ param }}",
+      "deleted": "Một Product Type đã xóa với định danh {{ param }}",
+      "delete": {
+        "question": "Bạn có chắc là muốn xóa Product Type {{ id }}?"
+      },
+      "detail": {
+        "title": "Product Type"
+      },
+      "productTypeCode": "Product Type Code",
+      "productTypeName": "Product Type Name",
+      "productTypeDesc": "Product Type Desc",
+      "productTypeCategory": "Product Type Category",
+      "productUDF1": "Product UDF 1",
+      "productUDF2": "Product UDF 2",
+      "productUDF3": "Product UDF 3",
+      "isDeleted": "Is Deleted",
+      "productProductType": "Product Product Type",
+      "walletProductType": "Wallet Product Type",
+      "walletRuleProductType": "Wallet Rule Product Type",
+      "partnerTransProductType": "Partner Trans Product Type",
+      "productTypeWallet": "Product Type Wallet"
+    }
+  }
+}

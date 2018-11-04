@@ -1,0 +1,28 @@
+{
+  "vpay03App": {
+    "status": {
+      "home": {
+        "title": "Statuses",
+        "createLabel": "Create a new Status",
+        "createOrEditLabel": "Create or edit a Status"
+      },
+      "created": "A new Status is created with identifier {{ param }}",
+      "updated": "A Status is updated with identifier {{ param }}",
+      "deleted": "A Status is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Status {{ id }}?"
+      },
+      "detail": {
+        "title": "Status"
+      },
+      "statusCode": "Status Code",
+      "statusValue": "Status Value",
+      "statusName": "Status Name",
+      "statusDesc": "Status Desc",
+      "statusUDF1": "Status UDF 1",
+      "statusUDF2": "Status UDF 2",
+      "statusUDF3": "Status UDF 3",
+      "isDeleted": "Is Deleted"
+    }
+  }
+}

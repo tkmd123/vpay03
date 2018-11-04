@@ -1,0 +1,77 @@
+{
+    "name": "PartnerLog",
+    "fields": [
+        {
+            "fieldName": "partnerLogAmount",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "partnerLogTransRef",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "partnerLogUsername",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "partnerLogProductTypeCode",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "partnerLogResultCode",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "partnerLogResultDesc",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "partnerLogDate",
+            "fieldType": "Instant"
+        },
+        {
+            "fieldName": "partnerLogUDF1",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "partnerLogUDF2",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "partnerLogUDF3",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "partnerLogUDF4",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "partnerLogUDF5",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "isDeleted",
+            "fieldType": "Boolean",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipName": "partner",
+            "otherEntityName": "partner",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20181104112413",
+    "entityTableName": "partner_log",
+    "dto": "no",
+    "pagination": "pagination",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

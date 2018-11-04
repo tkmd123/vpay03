@@ -1,0 +1,31 @@
+{
+  "vpay03App": {
+    "walletTransactionType": {
+      "home": {
+        "title": "Wallet Transaction Types",
+        "createLabel": "Thêm mới một Wallet Transaction Type",
+        "createOrEditLabel": "Thêm mới hoặc cập nhật Wallet Transaction Type"
+      },
+      "created": "Một Wallet Transaction Type mới được tạo với định danh {{ param }}",
+      "updated": "Một Wallet Transaction Type cập nhật với định danh {{ param }}",
+      "deleted": "Một Wallet Transaction Type đã xóa với định danh {{ param }}",
+      "delete": {
+        "question": "Bạn có chắc là muốn xóa Wallet Transaction Type {{ id }}?"
+      },
+      "detail": {
+        "title": "Wallet Transaction Type"
+      },
+      "walletTransTypeCode": "Wallet Trans Type Code",
+      "walletTransTypeName": "Wallet Trans Type Name",
+      "walletTransTypeDesc": "Wallet Trans Type Desc",
+      "walletTransTypeFlag": "Wallet Trans Type Flag",
+      "walletTransTypeUDF1": "Wallet Trans Type UDF 1",
+      "walletTransTypeUDF2": "Wallet Trans Type UDF 2",
+      "walletTransTypeUDF3": "Wallet Trans Type UDF 3",
+      "walletTransTypeUDF4": "Wallet Trans Type UDF 4",
+      "walletTransTypeUDF5": "Wallet Trans Type UDF 5",
+      "isDeleted": "Is Deleted",
+      "walletTransWalletTransType": "Wallet Trans Wallet Trans Type"
+    }
+  }
+}

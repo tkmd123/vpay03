@@ -1,0 +1,76 @@
+{
+    "name": "WalletTransactionType",
+    "fields": [
+        {
+            "fieldName": "walletTransTypeCode",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "unique",
+                "required"
+            ]
+        },
+        {
+            "fieldName": "walletTransTypeName",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "walletTransTypeDesc",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "walletTransTypeFlag",
+            "fieldType": "Integer",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "walletTransTypeUDF1",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "walletTransTypeUDF2",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "walletTransTypeUDF3",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "walletTransTypeUDF4",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "walletTransTypeUDF5",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "isDeleted",
+            "fieldType": "Boolean",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "walletTransWalletTransType",
+            "otherEntityName": "walletTransaction",
+            "otherEntityRelationshipName": "walletTransactionType"
+        }
+    ],
+    "changelogDate": "20181104112406",
+    "javadoc": "DEBIT, CREDIT, CANCEL",
+    "entityTableName": "wallet_transaction_type",
+    "dto": "no",
+    "pagination": "infinite-scroll",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

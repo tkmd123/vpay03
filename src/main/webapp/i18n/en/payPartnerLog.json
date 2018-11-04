@@ -1,0 +1,34 @@
+{
+  "vpay03App": {
+    "payPartnerLog": {
+      "home": {
+        "title": "Pay Partner Logs",
+        "createLabel": "Create a new Pay Partner Log",
+        "createOrEditLabel": "Create or edit a Pay Partner Log"
+      },
+      "created": "A new Pay Partner Log is created with identifier {{ param }}",
+      "updated": "A Pay Partner Log is updated with identifier {{ param }}",
+      "deleted": "A Pay Partner Log is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Pay Partner Log {{ id }}?"
+      },
+      "detail": {
+        "title": "Pay Partner Log"
+      },
+      "payLogAmount": "Pay Log Amount",
+      "payLogTransRef": "Pay Log Trans Ref",
+      "payLogUsername": "Pay Log Username",
+      "payLogProductTypeCode": "Pay Log Product Type Code",
+      "payLogResuleCode": "Pay Log Resule Code",
+      "payLogResuleDesc": "Pay Log Resule Desc",
+      "payLogDate": "Pay Log Date",
+      "payLogUDF1": "Pay Log UDF 1",
+      "payLogUDF2": "Pay Log UDF 2",
+      "payLogUDF3": "Pay Log UDF 3",
+      "payLogUDF4": "Pay Log UDF 4",
+      "payLogUDF5": "Pay Log UDF 5",
+      "isDeleted": "Is Deleted",
+      "payPartner": "Pay Partner"
+    }
+  }
+}

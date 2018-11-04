@@ -1,0 +1,87 @@
+{
+    "name": "WalletTransaction",
+    "fields": [
+        {
+            "fieldName": "walletTransAmount",
+            "fieldType": "Long",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "walletTransDate",
+            "fieldType": "Instant",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "walletTransRef",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "walletTransUsername",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "walletTransStatus",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "walletTransUDF1",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "walletTransUDF2",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "walletTransUDF3",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "walletTransUDF4",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "walletTransUDF5",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "isDeleted",
+            "fieldType": "Boolean",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipName": "walletTransactionType",
+            "otherEntityName": "walletTransactionType",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipName": "wallet",
+            "otherEntityName": "wallet",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "partnerTransWalletTransaction",
+            "otherEntityName": "partnerTransaction",
+            "otherEntityRelationshipName": "walletTransaction"
+        }
+    ],
+    "changelogDate": "20181104112410",
+    "entityTableName": "wallet_transaction",
+    "dto": "no",
+    "pagination": "pagination",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}
