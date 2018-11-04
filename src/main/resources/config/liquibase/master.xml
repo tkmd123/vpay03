@@ -19,6 +19,7 @@
     <include file="config/liquibase/changelog/20181104112412_added_entity_PayPartnerLog.xml" relativeToChangelogFile="false"/>
     <include file="config/liquibase/changelog/20181104112413_added_entity_PartnerLog.xml" relativeToChangelogFile="false"/>
     <include file="config/liquibase/changelog/20181104112414_added_entity_Status.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20181104113435_added_entity_EntityAuditEvent.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-changelog - JHipster will add liquibase changelogs here -->
     <include file="config/liquibase/changelog/20181104112402_added_entity_constraints_Product.xml" relativeToChangelogFile="false"/>
     <include file="config/liquibase/changelog/20181104112403_added_entity_constraints_ProductTypeWallet.xml" relativeToChangelogFile="false"/>

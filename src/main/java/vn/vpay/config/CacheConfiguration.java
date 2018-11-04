@@ -68,6 +68,7 @@ public class CacheConfiguration {
             cm.createCache(vn.vpay.domain.PayPartnerLog.class.getName(), jcacheConfiguration);
             cm.createCache(vn.vpay.domain.PartnerLog.class.getName(), jcacheConfiguration);
             cm.createCache(vn.vpay.domain.Status.class.getName(), jcacheConfiguration);
+            cm.createCache(vn.vpay.domain.EntityAuditEvent.class.getName(), jcacheConfiguration);
             // jhipster-needle-ehcache-add-entry
         };
     }

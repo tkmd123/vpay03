@@ -17,7 +17,7 @@ import java.util.Objects;
 @Entity
 @Table(name = "partner_log")
 @Cache(usage = CacheConcurrencyStrategy.NONSTRICT_READ_WRITE)
-public class PartnerLog implements Serializable {
+public class PartnerLog extends AbstractAuditingEntity implements Serializable {
 
     private static final long serialVersionUID = 1L;
 

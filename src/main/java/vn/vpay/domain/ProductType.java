@@ -20,7 +20,7 @@ import java.util.Objects;
 @Entity
 @Table(name = "product_type")
 @Cache(usage = CacheConcurrencyStrategy.NONSTRICT_READ_WRITE)
-public class ProductType implements Serializable {
+public class ProductType extends AbstractAuditingEntity implements Serializable {
 
     private static final long serialVersionUID = 1L;
 

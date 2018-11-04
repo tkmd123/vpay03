@@ -18,7 +18,7 @@ import java.util.Objects;
 @Entity
 @Table(name = "pay_partner")
 @Cache(usage = CacheConcurrencyStrategy.NONSTRICT_READ_WRITE)
-public class PayPartner implements Serializable {
+public class PayPartner extends AbstractAuditingEntity implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
